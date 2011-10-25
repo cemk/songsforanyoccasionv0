@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h1>{{ result.name }} - {{ result.artist }}</h1>
+<p>
+In the album <strong>{{ result.album }}</strong>
+</p>
+
+{% for occasion in result['occasions'] %}
+  <p>{{ occasion.type }} -  {{ occasion.value }}</p>
+  {% autoescape false %}
+  <p>{{ occasion.excerpt }}</p>
+  {% endautoescape %}
+  <hr />
+{% endfor %}
+
+{% endblock %}
