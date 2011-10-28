@@ -1,17 +1,28 @@
-{% extends 'layout.html' %}
+{% extends 'header.html' %}
 {% block body %}
 
-<h1>{{ result.name }} - {{ result.artist }}</h1>
-<p>
-In the album <strong>{{ result.album }}</strong>
-</p>
+<div class="container_16">
 
-{% for occasion in result['occasions'] %}
-  <p>{{ occasion.type }} -  {{ occasion.value }}</p>
-  {% autoescape false %}
-  <p>{{ occasion.excerpt }}</p>
-  {% endautoescape %}
-  <hr />
-{% endfor %}
+	<div class="grid_16">
+		<h1>{{ result.name }} - {{ result.artist }}</h1>
+		<p>
+		In the album <strong>{{ result.album }}</strong>
+		</p>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="grid_6 prefix_10">
+	
+		{% for occasion in result['occasions'] %}
+		  <p class="occasion"><strong>{{ occasion.type }}:</strong> {{ occasion.value }}</p>
+		  {% autoescape false %}
+		  <p class="excerpt">{{ occasion.excerpt }}</p>
+		  {% endautoescape %}
+		  <hr />
+		{% endfor %}
+	
+	</div>
 
 {% endblock %}
+</div>

@@ -1,3 +1,6 @@
+/* @override 
+	http://127.0.0.1:5000/static/style.css */
+
 body        { font-family: 'Georgia', serif; font-size: 17px; margin: 20px 30px; }
 h1, a       { color: #851818; }
 a:hover     { color: #BD1C1C; }
@@ -12,3 +15,22 @@ h2          { color: #851818; }
 a.back      { color: #aaa; }         
 ul          { margin: 0; color: #851818; list-style-type: square; }
 ul li a     { margin-left: -5px; }
+
+
+.occasion {
+	color: #851818;
+	/*color: white;*/
+	display: inline;
+}
+
+.occasion:hover {
+	padding: 3px;
+	margin: -3px;
+	cursor: pointer;
+	color: white;
+	background-color: #851818;
+}
+
+.excerpt {
+	margin: 5px 0 0;
+}
