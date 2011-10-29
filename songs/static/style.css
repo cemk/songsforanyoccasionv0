@@ -1,7 +1,9 @@
 /* @override 
 	http://127.0.0.1:5000/static/style.css */
 
-body        { font-family: 'Georgia', serif; font-size: 17px; margin: 20px 30px; }
+body       { font-family: 'Georgia', serif; font-size: 17px; margin: 20px 30px; }
+
+textarea 	{ font-family:  'Georgia'; }
 h1, a       { color: #851818; }
 a:hover     { color: #BD1C1C; }
 h1, h2, h3  { font-family: 'Garamond', 'Georgia', serif; font-weight: normal; }
@@ -33,4 +35,9 @@ ul li a     { margin-left: -5px; }
 
 .excerpt {
 	margin: 5px 0 0;
+}
+
+.lyric_form {
+	height: 300px;
+	width: 100%;
 }

@@ -1,5 +1,4 @@
-from songs import app, connection
-from flask import render_template
+from songs import app, connection, render_template
 import datetime
 import json
 
@@ -54,3 +53,7 @@ def index():
     
     result = songs.find({"name":"Tuesday"})[0]
     return render_template('test.html', result=result)
+    
+    
+    
+    
